@@ -12,7 +12,7 @@ const server = http.createServer(app);
 app.use(cors());
 
 app.get('/',(req,res)=>{
-    res.send('Im server')
+    res.sendFile(__dirname +'/index.html')
 })
 
 app.get('/data',(req,res)=>{
